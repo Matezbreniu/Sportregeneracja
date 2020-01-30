@@ -1,0 +1,16 @@
+.wrapper {
+  margin: 10px;
+  max-width: 1400px;
+
+  @media (min-width:600px) {
+    margin: 10px 20px
+  }
+
+  @media (min-width:1000px) {
+    margin: 10px 30px;
+  }
+
+  @media (min-width:1260px) {
+    margin: 0 auto;
+  }
+}

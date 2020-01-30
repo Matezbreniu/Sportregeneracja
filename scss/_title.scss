@@ -1,0 +1,11 @@
+.title {
+  flex-basis: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 4rem;
+  text-transform: uppercase;
+
+  @media (min-width:1000px) {
+    font-size: 5rem;
+  }
+}

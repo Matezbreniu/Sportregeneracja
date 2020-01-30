@@ -1,0 +1,18 @@
+.recommendations {
+  background-color: #000;
+  color: white;
+  padding: 50px 0;
+
+  &__container {
+    text-align: center;
+  }
+
+  &__img {
+    width: 100%;
+
+    @media(min-width:1000px) {
+      width: 70%;
+    }
+  }
+
+}

@@ -1,0 +1,50 @@
+.banner {
+  margin-top: 50px;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.75);
+
+  @media (min-width: 1000px) {
+    margin-top: 70px;
+  }
+
+  &__container {
+    position: relative;
+    height: 50vh;
+    background-image: url(../images/bannerNew.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  &__company-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    transition: 0.7s;
+    opacity: 0;
+    @media (min-width: 600px) {
+      font-size: 3rem;
+    }
+    @media (min-width: 1200px) {
+      font-size: 5rem;
+    }
+    &.animated {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+
+  &__red {
+    color: #ed1c24;
+  }
+  &__cover {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
